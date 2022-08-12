@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Source+Sans+Pro:wght@600&display=swap');
+
+* {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #111827;
+}
+
+.container {
+    width: 100%;
+    max-width: 1296px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 20px;
+}
+
+.bars-box {
+    display: none;
+}
+
+.logo-box {
+    text-decoration: none;
+}
+
+.logo-span {
+    padding: 8px 13px;
+    background: #4B5563;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.logo-word {
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 45px;
+}
+
+nav ul li a {
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+.search-box {
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    background: rgba(31, 41, 55, 0.6);
+    border-radius: 50px;
+}
+
+.search-box input {
+    color: #fff;
+    height: 2.5rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    border: 1px solid rgb(118, 118, 118);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0;
+    outline: 0;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+.search-box label {
+    color: rgba(255, 255, 255, 0.1);
+    padding-left: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    opacity: 0.6;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 1px solid rgb(118, 118, 118);
+    border-right: 0;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.search-main .fa-search-item {
+    display: none;
+}
+
+.search-box .fas {
+    display: flex;
+}
+
+footer {
+    padding: 6rem 0;
+}
+
+footer p {
+    font-family: 'Patrick Hand';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 797px) {
+
+    .fa-bars {
+        display: block;
+        transform: scale(1.5);
+        color: #FFFFFF;
+    }
+
+    .bars-box {
+        position: relative;
+        display: inline-block;
+    }
+
+    .bars {
+        border: 0;
+        padding: 1rem;
+        border-radius: 10%;
+    }
+      
+    .bars-content {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        margin-left: 1rem;
+    }
+      
+    .bars-content a {
+        text-transform: capitalize;
+        color: #fff;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+      
+    .bars-content a:hover {
+        background-color: #4B5563;
+    }
+      
+    .bars-box:hover .bars-content {
+        display: block;
+    }
+      
+    .bars-box:hover .bars {
+        background-color: #4B5563;
+    }
+      
+    .bars-box:hover .fa-bars {
+        background-color: #4B5563;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 497px) {
+
+    .search-main .fa-search-item {
+        display: block;
+        transform: scale(1.5);
+        color: #FFFFFF;
+    }
+
+    .search-main {
+        position: relative;
+        display: inline-block;
+    }
+
+    .fa-search-item {
+        border: 0;
+        padding: .5rem;
+        border-radius: 10%;
+    }
+      
+    .search-box {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+      
+    .search-box label {
+        text-transform: capitalize;
+        color: #fff;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+      
+
+    .search-box input {
+        text-transform: capitalize;
+        color: #fff;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        border-left: 0;
+    }
+      
+      
+    .search-main:hover .search-box {
+        display: flex;
+        position: absolute;
+        margin-right: 1rem;
+        right: .75rem;
+        top: 3rem;
+    }
+      
+    .search-main:hover .fa-search-item {
+        background-color: #4B5563;
+    }
+      
+    .search-main:hover .fasearch {
+        background-color: #4B5563;
+    }
+}

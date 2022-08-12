@@ -1,0 +1,132 @@
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-main-img {
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+
+.home-span {
+    font-family: 'Patrick Hand';
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.home-content h2 {
+    font-family: 'Patrick Hand';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+
+.home-content p {
+    font-family: 'Patrick Hand';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.home-profile {
+    display: flex;
+}
+
+.home-profile img {
+    margin-right: 1rem;
+}
+
+.home-profile a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Patrick Hand';
+    margin: 0;
+    margin-bottom: .5rem;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.home-profile h4 {
+    font-family: 'Patrick Hand';
+    margin: 0;
+    margin-bottom: .5rem;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.home-items {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-item {
+    width: 340px;
+    list-style: none;
+}
+
+.home-item-img {
+    width: 100%;
+    border-radius: 14px;
+}
+
+.home-item .home-content {
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 797px) {
+
+    .home-container {
+        flex-direction: column;
+    }
+
+    .home-main-img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-top: 1.2rem;
+    }
+
+    .home-content {
+        margin-top: 2rem;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 497px) {
+
+    .home-container {
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 1rem;
+    }
+
+    .home-items {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-top: 0;
+    }
+
+    .home-item {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+}

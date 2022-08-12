@@ -1,0 +1,39 @@
+.details-div {
+    text-align: center;
+}
+
+.home-profile {
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.details-div .container img {
+    border-radius: 5px;
+}
+
+.details-text {
+    padding: 0 8rem;
+}
+
+.details-text p {
+    font-family: 'Patrick Hand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-top: 4rem;
+}
+
+@media only screen and (max-width: 497px) {
+
+    .details-text {
+        padding: 0;
+    }
+
+    .details-text p {
+        margin-top: 2rem;
+    }
+    
+    
+}
