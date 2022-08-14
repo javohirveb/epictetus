@@ -184,6 +184,11 @@ footer p {
     nav {
         display: none;
     }
+
+    footer {
+        margin-top: 2rem;
+        padding: .5rem 0;
+    }
 }
 
 
